@@ -156,8 +156,27 @@ body{
 }
 
 .programs-list__block{
+    position: relative;
     width: 570px;
+    padding-top: 75px;
+    padding-left: 50px;
+    padding-bottom: 55px;
+    padding-right: 50px;
     background-color: var(--basic-gray);
+}
+
+.programs-list__logo{
+    position: absolute;
+    top: 40px;
+}
+.programs-list__title{
+    padding-left: 164px;
+    margin-bottom: 70px;
+    font-family: Oswald;
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 400;
+    text-transform: uppercase;
 }
 
 
