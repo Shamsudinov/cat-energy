@@ -21,8 +21,10 @@
     --basic-white: #ffffff;
     --basic-gray: #D9D9D9;
     --secondary-gray: #f2f2f2;
+    --light--gray: #CDCDCD;
     --secondary-green: #5EAA2F;
     --basic-black: #000000;
+    --secondary-black: #222222;
     --light-dark: #444444;
 }
 
@@ -366,6 +368,54 @@ body{
 }
 
 .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 245px;
+    padding-bottom: 40px;
+    padding-right: 30px;
+    padding-left: 35px;
     background-color: var(--secondary-gray);
+}
+
+.card__title{
+    width: 145px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: Oswald;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: var(--secondary-black);
+}
+
+.card__table{
+    width: 170px;
+    margin-bottom: 30px;
+}
+
+
+.description-table__title{
+    border: collapse;
+    border-bottom: 1px solid #cdcdcd;
+    font-weight: 400;
+}
+.description-table__data{
+    border: collapse;
+    border-bottom: 1px solid #cdcdcd;
+    text-align: right;
+}
+.card__button{
+    width: 170px;
+    padding: 10px 0;
+    font-family: Oswald;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    border: none;
+    color: var(--basic-white);
+    background-color: var(--basic-green);
+    cursor: pointer;
 }
