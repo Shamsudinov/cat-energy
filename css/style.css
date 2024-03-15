@@ -444,3 +444,62 @@ body{
     background-color: var(--basic-green);
     cursor: pointer;
 }
+.products-table__row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #cdcdcd;
+    border-top: 1px solid #cdcdcd;
+    width: 896px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.products-table__data,
+.products-table__title{
+    width: 244px;
+}
+.products-table__data .card__button{
+    width: 244px;
+}
+.products-table{
+    width: 896px;
+}
+.products-table__title{
+    font-family: Oswald;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: var(--secondary-black);
+    text-align: left;
+}
+
+.gift{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 245px;
+    height: 289px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-image: url(../img/gift-photo-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.gift__img{
+    margin-bottom: 45px;
+}
+
+.gift__text{
+    line-height: 20px;
+    color: var(--basic-white);
+}
+
+.secondary-catalog__container{
+    display: flex;
+    justify-content: space-between;
+}
