@@ -65,7 +65,7 @@
                         </fieldset>
                     </div>
                     <div class="form-contact-block">
-                        <h2>Контактные данные (владельца кота)</h2>
+                        <h2 class="form-title form-contact-block__title">Контактные данные (владельца кота)</h2>
                         <fieldset class="fieldset-contacts">
                             <div class="form__item">
                                 <label for="email" class="form__label">E-mail:</label>
@@ -78,30 +78,38 @@
                         </fieldset>
                     </div>
                     <div class="form-comment-block">
-                        <h2>Комментарий</h2>
+                        <h2 class="form-title form-comment-block__title">Комментарий</h2>
                             <textarea name="" id="" cols="30" rows="10" class="message-box"></textarea>
                         </fieldset>
                     </div>
-                    <div>
-                        <h2>Дополнительно</h2>
+                    <div class="form-extra-options">
+                        <h2 class="form-title form-extra-options__title">Дополнительно</h2>
                         <fieldset class="fieldset-extra-options">
                             <div class="form__item">
                                 <label for="sugar" class="form__label">сахарозаменитель</label>
-                                <input type="checkbox" id="sugar">
+                                <input type="checkbox" id="sugar" class="form__input visually-hidden">
+                                <span class="checkbox"></span>
                             </div>
                             <div class="form__item">
                                 <label for="water" class="form__label">питьевая вода</label>
-                                <input type="checkbox" id="water">
+                                <input type="checkbox" id="water" class="form__input visually-hidden">
+                                <span class="checkbox"></span>
                             </div>
                             <div class="form__item">
                                 <label for="milk" class="form__label">молоко</label>
-                                <input type="checkbox" id="milk">
+                                <input type="checkbox" id="milk" class="form__input visually-hidden">
+                                <span class="checkbox"></span>
                             </div>
                             <div class="form__item">
                                 <label for="vitamine" class="form__label">витамины</label>
-                                <input type="checkbox" id="vitamine">
+                                <input type="checkbox" id="vitamine" class="form__input visually-hidden">
+                                <span class="checkbox"></span>
                             </div>
                         </fieldset>
+                    </div>
+                    <div class="form-finish">
+                        <button class="button form__button">Отправить заявку</button>
+                        <p>* — Обязательные поля</p>
                     </div>
                 </form>
             </div>
