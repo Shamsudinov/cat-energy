@@ -581,10 +581,33 @@ body{
     border: 1px solid var(--special-gray);
 }
 
-.form-rb{
-    width: 10px;
-    height: 10px;
+.rb-label{
+    position: relative;
+    padding-left: 50px;
+}
+
+.radio-button{
+    width: 40px;
+    height: 40px;
     border: 1px solid var(--light--gray);
+    position: absolute;
+    border-radius: 100%;
+    left: 0px;
+    top: -4px;
+}
+.radio-button__dot{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border-radius: 100%;
+    background-color: var(--basic-green);
+    position: relative;
+    left: 10px;
+    top: 4px;
+    opacity: 0;
+}
+.fieldset-goal .form__input:checked +.radio-button{
+    border: 2px solid red;
 }
 
 .fieldset-contacts{
@@ -621,11 +644,16 @@ body{
     margin-bottom: 0;
 }
 
+.checkbox-label{
+    position: relative;
+}
 .checkbox{
     width: 40px;
     height: 40px;
     border: 1px solid var(--light--gray);
     position: absolute;
+    left: 0;
+    top: -5px;
 }
 
 .fieldset-extra-options .form__input + .checkbox{  
